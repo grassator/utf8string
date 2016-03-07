@@ -1,0 +1,38 @@
+{
+  "name": "utf8string",
+  "version": "0.1.0",
+  "description": "Starter for a es6 node library",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= 5"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "2.2.0",
+    "mocha": "2.4.5"
+  },
+  "scripts": {
+    "lint": "eslint src test",
+    "test": "mocha test",
+    "tdd": "mocha --watch test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grassator/utf8string.git"
+  },
+  "keywords": [
+    "starter",
+    "seed",
+    "es6",
+    "es2015"
+  ],
+  "author": "Dmitriy Kubyshkin <dmitriy@kubyshkin.name>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grassator/utf8string/issues"
+  },
+  "homepage": "https://github.com/grassator/utf8string#readme"
+}
