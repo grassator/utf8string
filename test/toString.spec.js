@@ -5,7 +5,7 @@ const assert = require('assert');
 
 describe('toString', function () {
 
-    it('should provide a way to iterate over bytes of the string', function () {
+    it('should provide a way to convert to a native string', function () {
         const original = 'abcЯзь';
         const str = new Utf8String(original);
         assert.deepStrictEqual(str.toString(), original);
