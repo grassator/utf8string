@@ -27,6 +27,14 @@ describe('CodePointsIterator', function () {
         );
     });
 
+    it('should provide a way to clone an iterator keeping the position', function () {
+        const str = new Utf8String('abcЯзь');
+        const iter = str.codePoints();
+        iter.next();
+        const clonedIter = iter.clone();
+        assert.deepStrictEqual(iter.current(), clonedIter.current());
+    });
+
 });
 
 
