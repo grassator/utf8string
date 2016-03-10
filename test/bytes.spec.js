@@ -13,6 +13,20 @@ describe('BytesIterator', function () {
         );
     });
 
+    it('should provide a way to iterate backwards over the bytes of the string', function () {
+        const str = new Utf8String('abcЯзь');
+        const result = [];
+        const iter = str.bytesEnd();
+        let index;
+        while ((index = iter.previous()) && (index.value !== Utf8String.START || index.done !== false)) {
+            result.unshift(index.value);
+        }
+        assert.deepStrictEqual(
+            result,
+            [0x61, 0x62, 0x63, 0xD0, 0xAF, 0xD0, 0xB7, 0xD1, 0x8C]
+        );
+    });
+
 });
 
 
