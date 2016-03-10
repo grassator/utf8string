@@ -1,6 +1,6 @@
 'use strict';
 
-const stringToUtf8Bytes = require('../lib/stringToUtf8Bytes');
+const stringToUtf8Bytes = require('../lib/encode').stringToUtf8Bytes;
 const assert = require('assert');
 
 describe('stringToUtf8Bytes', function () {
