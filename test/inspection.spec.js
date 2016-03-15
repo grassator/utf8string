@@ -5,7 +5,7 @@ const assert = require('assert');
 
 describe('Utf8String Inspection Methods', function () {
 
-    describe.only('find()', function () {
+    describe('find()', function () {
 
         it('should return null when the substring is not found', function () {
             const str = new Utf8String('фыва');
