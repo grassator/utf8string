@@ -1,6 +1,6 @@
 {
   "name": "utf8string",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Starter for a es6 node library",
   "main": "lib/index.js",
   "engines": {
