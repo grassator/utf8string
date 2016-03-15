@@ -7,7 +7,25 @@
 [travis-url]: https://travis-ci.org/grassator/utf8string
 [travis-image]: https://travis-ci.org/grassator/utf8string.svg?branch=master
 
-Work in progress on creating a usable UTF8 string implementation in JavaScript.
+While this string implementation has all the necessary bits to sometime grow into
+a full-fledged implementation, this is unlikely to happen firstly because of
+time needed, but also because such an implementation require a custom regular
+expression engine.
+
+## Simple Example
+
+```js
+const str = new Utf8String('aaaabc');
+const searchStr = new Utf8String('aab');
+const result = str.substring(str.find(searchStr));
+console.log(String(result)); // "aabc"
+```
+
+For more examples please refer to the tests.
+
+## Immutability
+
+All string operation return a new `Utf8String` object.
 
 
 ## Iterating a string
